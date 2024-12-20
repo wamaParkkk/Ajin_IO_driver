@@ -113,7 +113,7 @@ namespace Ajin_IO_driver
                 if (dVolt < -10.0 || dVolt > 10.0)
                     return;
 
-                uint nStatus = 0;
+                uint nStatus = 0; 
                 CAXA.AxaInfoIsAIOModule(ref nStatus);
                 if (((CAXL.AxlIsOpened() & 1) != 0) && ((AXT_EXISTENCE)nStatus == AXT_EXISTENCE.STATUS_EXIST))
                 {
@@ -128,11 +128,11 @@ namespace Ajin_IO_driver
                     Global.EventLog("AxaIsAOModule() Error!!");
                 }
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
                 Global.EventLog(e.Message);
-            }            
-        }
+            }
+        }        
 
         public static double ReadVoltage(int nChannelNo)
         {
