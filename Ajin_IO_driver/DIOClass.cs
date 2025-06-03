@@ -188,8 +188,7 @@ namespace Ajin_IO_driver
 				{
 					case AXT_MODULE.AXT_SIO_DO32P:
 					case AXT_MODULE.AXT_SIO_DO32T:
-					case AXT_MODULE.AXT_SIO_RDO32:
-					case AXT_MODULE.AXT_SIO_DB32P:
+					case AXT_MODULE.AXT_SIO_RDO32:					
 						CAXD.AxdoWriteOutportBit(iModuleID + 1, nIndex, uValue);
 						break;
 
@@ -219,8 +218,7 @@ namespace Ajin_IO_driver
 				{
 					case AXT_MODULE.AXT_SIO_DO32P:
 					case AXT_MODULE.AXT_SIO_DO32T:
-					case AXT_MODULE.AXT_SIO_RDO32:
-                    case AXT_MODULE.AXT_SIO_DB32P:
+					case AXT_MODULE.AXT_SIO_RDO32:                    
                         CAXD.AxdoWriteOutportBit(iModuleID + 2, nIndex - 32, uValue);
 						break;
 
